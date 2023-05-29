@@ -2,4 +2,4 @@
 number = 3.14159
 num = f"{number}"
 float = "Float: "
-print(float,num[:4])
+print(float, num[:4])

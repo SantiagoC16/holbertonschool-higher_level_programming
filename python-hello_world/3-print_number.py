@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 number = 98
-print(number, 'Battery street')
+to_print = f"{number} Battery street\n"
+print(to_print)

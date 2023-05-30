@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 str = "Holberton School"
-treestr = f"{str}{str}{str}\n"
+treestr = f"{str}{str}{str}"
 newlinestr = f"{str}"
-print(treestr, newlinestr[:9])
+print(f"{str}{str}{str}")
+print(f"{str[:9]}")

@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+str = "{}"
 for n in range (0, 99):
 		hexn = hex(n)
-		print(hexn)
+		print(str.format(hexn))

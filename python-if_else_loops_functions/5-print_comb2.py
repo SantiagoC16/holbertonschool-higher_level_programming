@@ -2,6 +2,6 @@
 the_str = "{:02d}"
 for n in range(0, 100):
     if n != 99:
-        print("{}, ".format(n), end="")
+        print("{the_str}, ".format(n), end="")
     else:
-        print("{}".format(n))
+        print("{the_str}".format(n))

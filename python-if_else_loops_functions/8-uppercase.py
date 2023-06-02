@@ -4,6 +4,6 @@ def uppercase(str):
         ordd = ord(str[s])
         if ordd > 64 and ordd < 91:
             print("{}".format(chr(ordd)))
-    else:
-        strm = ordd - 32
-        print("{}".format(chr(strm)))
+        else:
+            strm = ordd - 32
+            print("{}".format(chr(strm)))

@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-str = "{}"
+the_str = "{:02d}"
 for n in range(0, 100):
     if n != 99:
-        print(str.format(str(n).zfill(2)), ", ", end="")
-print(str.format(str(n).zfill(2)))
+        print(the_str.format(n), ",", end=" ")
+    else:
+        print(the_str.format(n))

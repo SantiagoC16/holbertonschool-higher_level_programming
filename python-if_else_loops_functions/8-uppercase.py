@@ -7,3 +7,4 @@ def uppercase():
         else:
             strm = ordd - 32
             print("{}".format(chr(strm)), end="")
+print()

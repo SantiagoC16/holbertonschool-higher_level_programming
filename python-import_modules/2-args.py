@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 if __name__ == "__main__":
     import sys
-    arguments = len(sys.argv) -1
+    arguments = len(sys.argv) - 1
     if arguments == 0:
         print("{} arguments.".format(arguments))
     elif arguments == 1:

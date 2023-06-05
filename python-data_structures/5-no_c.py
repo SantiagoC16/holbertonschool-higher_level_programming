@@ -1,4 +1,7 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    while ord(my_string) != 67 or ord(my_string) != 99:
-        new_str = my_string
+    new_str = ""
+    for l in my_string:
+        if l != "c" and l != "C":
+            new_str += l
+    return new_str

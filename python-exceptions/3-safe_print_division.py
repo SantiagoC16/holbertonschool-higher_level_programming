@@ -1,12 +1,10 @@
 #!/usr/bin/python3
 def safe_print_division(a, b):
     try:
-        if a == 0:
-            return None
+        ab = a + b
     except ZeroDivisionError:
-        if b == 0:
+        if a == 0 or b == 0:
             return None
     finally:
-        ab = a + b
         print("{}".format(ab))
         return ab

@@ -13,7 +13,7 @@ My name is Bob
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name("Gutierrez", -2.6)
+>>> say_my_name("Gutierrez", 4.5)
 Traceback (most recent call last):
 TypeError: last_name must be a string
 

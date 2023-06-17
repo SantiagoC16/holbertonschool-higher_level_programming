@@ -30,6 +30,8 @@ def matrix_divided(matrix, div):
     if not new_m:
         return new_m
     for row in range(len(new_m)):
+        if not isinstance(new_m[row], list):
+            raise TypeError(error)
         lenght = len(new_m[0])
         if len(new_m[row]) != lenght:
             raise TypeError("Each row of the matrix must have the same size")

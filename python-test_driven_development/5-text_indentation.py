@@ -1,5 +1,10 @@
 #!/usr/bin/python3
+"""task 5"""
+
+
 def text_indentation(text):
+    """task 5"""
+
     if not isinstance(text, str):
         TypeError("text must be a string")
     flag = False

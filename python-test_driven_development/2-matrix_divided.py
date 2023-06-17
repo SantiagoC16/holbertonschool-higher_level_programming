@@ -31,7 +31,7 @@ def matrix_divided(matrix, div):
         return new_m
     for row in range(len(new_m)):
         lenght = len(new_m[0])
-        if lenght != len(new_m[row]):
+        if len(new_m[row]) != lenght:
             raise TypeError("Each row of the matrix must have the same size")
         for column in range(len(new_m[row])):
             if not isinstance(new_m[row][column], (int, float)):

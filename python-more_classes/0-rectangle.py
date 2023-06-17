@@ -2,7 +2,7 @@
 """empty class"""
 
 
-class Square:
+class Rectangle:
     """rectangulo"""
 
     pass

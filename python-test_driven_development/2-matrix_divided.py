@@ -29,9 +29,8 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError("division by zero")
     if not new_m or not new_m[0]:
         return new_m
-    else:
-        lenght = len(new_m[0])
     for row in range(len(new_m)):
+        lenght = len(new_m[0])
         if lenght != len(new_m[row]):
             raise TypeError("Each row of the matrix must have the same size")
         for column in range(len(new_m[row])):

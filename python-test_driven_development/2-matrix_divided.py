@@ -27,7 +27,7 @@ def matrix_divided(matrix, div):
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
-    if not new_m or not new_m[0]:
+    if not new_m:
         return new_m
     for row in range(len(new_m)):
         lenght = len(new_m[0])

@@ -45,9 +45,11 @@ class Rectangle:
         return corto + largo
 
     def __str__(self):
-        if self.__height == 0 or self.__width == 0:
-            return ""
         print_rect = ""
-        for _ in range(self.__height):
-            print_rect += "#" * self.__width + "\n"
-        return print_rect
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        for j in range(self.__height):
+            for k in range(self.__width):
+                print_rect += "#"
+            print_rect += "\n"
+        return print_rect[:-1]

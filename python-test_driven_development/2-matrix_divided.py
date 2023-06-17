@@ -24,7 +24,7 @@ def matrix_divided(matrix, div):
     if not isinstance(new_m, list):
         raise TypeError(error)
     if not matrix:
-        raise TypeError(error)
+        print("[]")
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
     if div == 0:

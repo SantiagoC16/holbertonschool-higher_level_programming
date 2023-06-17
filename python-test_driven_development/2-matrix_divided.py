@@ -23,8 +23,6 @@ def matrix_divided(matrix, div):
     error = "matrix must be a matrix (list of lists) of integers/floats"
     if not isinstance(new_m, list):
         raise TypeError(error)
-    if not matrix:
-        print("[]")
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
     if div == 0:

@@ -21,7 +21,7 @@ def matrix_divided(matrix, div):
 
     new_m = matrix.copy()
     error = "matrix must be a matrix (list of lists) of integers/floats"
-    if not isinstance(new_m, (matrix, list)):
+    if not isinstance(new_m, list):
         raise TypeError(error)
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")

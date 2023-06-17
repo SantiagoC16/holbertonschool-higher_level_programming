@@ -48,6 +48,6 @@ class Rectangle:
         if self.__height == 0 or self.__width == 0:
             return ""
         print_rect = ""
-        for i in range(self.__height):
+        for _ in range(self.__height):
             print_rect += "#" * self.__width + "\n"
         return print_rect

@@ -7,4 +7,7 @@
 <li> python-data_structures</li>
 <li> python-more_data_structures</li>
 <li> python-exceptions</li>
+<li> python-classes</li>
+<li> python-test_driven_development</li>
+<li> python-more_classes</li>
 </ol>

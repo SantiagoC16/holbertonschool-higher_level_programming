@@ -55,3 +55,6 @@ class Square:
                 for two in range(self.__size):
                     print("#", end="")
                 print()
+
+    def __del__(self):
+        print("Bye rectangle...")

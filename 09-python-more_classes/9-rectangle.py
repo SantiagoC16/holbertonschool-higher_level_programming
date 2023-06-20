@@ -12,8 +12,8 @@ class Rectangle:
     # public instance attribute
     def __init__(self, width=0, height=0):
         # private instance attributes
-        self.width = width # Public instance attribute with getter and setter
-        self.height = height # Public instance attribute with getter and setter
+        self.width = width # Public instance attribute
+        self.height = height # Public instance attribute
         Rectangle.number_of_instances += 1
 
     # property (getter)
@@ -33,7 +33,7 @@ class Rectangle:
     # property (getter)
     @property
     def height(self):
-        return self.__height # Private instance attribute¿
+        return self.__height # Private instance attribute
 
     # setter
     @height.setter

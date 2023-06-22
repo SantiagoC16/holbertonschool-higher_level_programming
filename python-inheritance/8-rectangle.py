@@ -1,15 +1,13 @@
 #!/usr/bin/python3
 """task 5"""
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
-class BaseGeometry:
+class Rectangle(BaseGeometry):
     """comment"""
 
-    def area(self):
-        raise Exception("area() is not implemented")
-
-    def integer_validator(self, name, value):
-        if not type(value) is int:
-            raise TypeError("{} must be an integer".format(name))
-        if value <= 0:
-            raise ValueError("{} must be greater than 0".format(name))
+    def __init__(self, width, height):
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
+        self._Rectangule__width__width = width
+        self._Rectangule__height= height

@@ -1,67 +1,71 @@
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 >>> bg = BaseGeometry()
 
->>> bg.integer_validator("str", 69)
+>>> bg.integer_validator("width", 89)
 
->>> bg.integer_validator("str", "Santiago")
+>>> bg.integer_validator("name", "John")
 Traceback (most recent call last):
 TypeError: name must be an integer
 
->>> bg.integer_validator("str", 0)
+>>> bg.integer_validator("age", 0)
 Traceback (most recent call last):
 ValueError: age must be greater than 0
 
->>> bg.integer_validator("str", -6)
+>>> bg.integer_validator("distance", -4)
 Traceback (most recent call last):
 ValueError: distance must be greater than 0
 
->>> bg.integer_validator("str", [1, 2, 3])
+>>> bg.integer_validator("suma", [12, 23, 43])
 Traceback (most recent call last):
 TypeError: suma must be an integer
-
->>> bg.integer_validator("str")
-Traceback (most recent call last):
-TypeError: integer_validator() missing 1 required positional argument: 'value'
 
 >>> bg.area()
 Traceback (most recent call last):
 Exception: area() is not implemented
 
+>>> bg.integer_validator("suma")
+Traceback (most recent call last):
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+>>> bg.integer_validator("suma", "")
+Traceback (most recent call last):
+TypeError: suma must be an integer
+
 >>> bg.integer_validator()
 Traceback (most recent call last):
 TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
->>> bg.integer_validator("str", None)
+>>> bg.integer_validator("suma", None)
 Traceback (most recent call last):
 TypeError: suma must be an integer
 
->>> bg.integer_validator("str", float('inf'))
+>>> bg.integer_validator("suma", float('INF'))
 Traceback (most recent call last):
 TypeError: suma must be an integer
 
->>> bg.integer_validator("str", float('nan'))
+>>> bg.integer_validator("suma", float('NaN'))
 Traceback (most recent call last):
 TypeError: suma must be an integer
 
->>> bg.integer_validator("str", 16.6)
+>>> bg.integer_validator("suma", 10.4)
 Traceback (most recent call last):
 TypeError: suma must be an integer
 
 >>> bg.integer_validator("", 10)
 
->>> bg.integer_validator("str", 1, 2)
+>>> bg.integer_validator("suma", 10, 13)
 Traceback (most recent call last):
 TypeError: integer_validator() takes 3 positional arguments but 4 were given
 
->>> bg.integer_validator("str", kk)
+>>> bg.integer_validator("suma", test)
 Traceback (most recent call last):
 NameError: name 'test' is not defined
 
->>> bg.integer_validator("str", (1, 2, 3))
+>>> bg.integer_validator("suma", (12, 45, 23))
 Traceback (most recent call last):
 TypeError: suma must be an integer
 
->>> bg.integer_validator("str", {1, 2, 3})
+>>> bg.integer_validator("suma", {12, 45, 23})
 Traceback (most recent call last):
 TypeError: suma must be an integer
 

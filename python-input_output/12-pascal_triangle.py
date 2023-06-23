@@ -1,5 +1,17 @@
 #!/usr/bin/python3
+"""task 12"""
+
+
 def pascal_triangle(n):
+    """_summary_
+
+    Args:
+        n (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
+
     list = [[1]]
     if n <= 0:
         return []

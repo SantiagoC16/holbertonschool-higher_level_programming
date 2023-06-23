@@ -12,7 +12,7 @@ def pascal_triangle(n):
         _type_: _description_
     """
 
-    list = [[1]]
+    list = []
     if n <= 0:
         return []
     elif n == 1:

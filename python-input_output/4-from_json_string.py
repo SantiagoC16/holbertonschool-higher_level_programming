@@ -13,4 +13,4 @@ def from_json_string(my_str):
         _type_: _description_
     """
 
-    return json.load(my_str)
+    return json.loads(my_str)

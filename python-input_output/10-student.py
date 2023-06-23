@@ -14,4 +14,8 @@ class Student:
         if not isinstance(attrs, list):
             return self.__dict__
         else:
-            
+            dicti = {}
+            for iter in attrs:
+                if iter in self.__dict__:
+                    dicti[iter] = self.__dict__[iter]
+            return dicti

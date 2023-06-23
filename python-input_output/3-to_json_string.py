@@ -8,6 +8,9 @@ def to_json_string(my_obj):
 
     Args:
         my_obj (_type_): _description_
+
+    Returns:
+        _type_: _description_
     """
 
-    json.dumps(my_obj)
+    return json.dumps(my_obj)

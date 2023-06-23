@@ -7,8 +7,6 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 
 if os.path.exist("add_item.json"):
-    """comment"""
-
     list = load_from_json_file("add_item.json")
     for _read in range(1, len(argv)):
         list.append(argv[_read])

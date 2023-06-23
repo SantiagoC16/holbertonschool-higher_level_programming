@@ -12,9 +12,9 @@ if os.path.exist("add_item.json"):
     list = load_from_json_file("add_item.json")
     for _read in range(1, len(argv)):
         list.append(argv[_read])
-        save_to_json_file("add.item.json")
+    save_to_json_file("add.item.json")
 else:
     list = []
     for _read in range(1, len(argv)):
         list.append(argv[_read])
-        save_to_json_file("add.item.json")
+    save_to_json_file("add.item.json")

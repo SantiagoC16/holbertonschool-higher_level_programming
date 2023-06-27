@@ -87,11 +87,17 @@ class Rectangle(Base):
     def display(self):
         """public method display"""
 
+        for j in range(self.__y):
+            print()
         for h in range(self.__height):
+            for s in range(self.__x):
+                print(" ", end="")
             for w in range(self.__width):
                 print("#", end="")
             print()
 
     def __str__(self):
+        """magic method str"""
+
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.__x, self.__y, self.__width, self.__height)

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" more more more Base """
+""" more more more comment Base """
 import json
 
 
@@ -25,3 +25,12 @@ class Base:
             return "[]"
         else:
             return json.dumps(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """class method"""
+
+        if list_objs is None:
+            return []
+        else:
+            return json.dump(list_objs, cls)

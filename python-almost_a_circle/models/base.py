@@ -28,14 +28,15 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """saves a list of dictionaries to a jason file"""
+        """class method x jason"""
 
-        if list_objs is None:
-            return []
-        else:
-            if cls.__name__ == "Rectangle":
-                with open("Rectangle.json", "w") as file:
-                    json.dump(list_objs, file)
+        lista = []
+        with open(cls.__name__ + ".json", "w") as archivo:
+
+            if list_objs is None:
+                archivo.write("[]")
             else:
-                with open("Square.json", "w") as file:
-                    json.dump(list_objs, file)
+                for file in list_objs:
+                    lista.append(file.to_dictionary())
+
+                archivo.write(cls.to_json_string(lista))

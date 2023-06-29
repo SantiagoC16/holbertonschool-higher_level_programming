@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """ more more more comment Base """
 import json
-import os
 
 
 class Base:
@@ -29,7 +28,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """saves a list of dictionaries to a jason fileeeeeeeeeeeeeeeeeeeeee"""
+        """saves a list of dictionaries to a jason file"""
 
         if list_objs is None:
             return []

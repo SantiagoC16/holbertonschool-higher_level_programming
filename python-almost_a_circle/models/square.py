@@ -48,3 +48,12 @@ class Square(Rectangle):
                     self.x = v
                 if k == "y":
                     self.y = v
+
+    def to_dictionary(self):
+        """public method"""
+
+        dict = {"x": self.x,
+                "y": self.y,
+                "id": self.id,
+                "size": self.size}
+        return dict

@@ -29,7 +29,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """class method + long comment -_-"""
+        """ saves a list of dictionaries to a json file """
 
         if list_objs is None:
             return []

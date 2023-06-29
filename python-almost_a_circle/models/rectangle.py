@@ -137,3 +137,4 @@ class Rectangle(Base):
                 "id": self.id,
                 "width": self.width,
                 "height": self.height}
+        return dict

@@ -49,3 +49,14 @@ class Base:
             return []
         else:
             return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """class method jason"""
+
+        if cls.__name__ == "Rectangle":
+            tonto = cls("nacho", "quiero")
+        else:
+            tonto = cls("checker")
+        tonto.update(**dictionary)
+        return tonto

@@ -40,3 +40,12 @@ class Base:
                     lista.append(file.to_dictionary())
 
                 archivo.write(cls.to_json_string(lista))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """static method"""
+
+        if json_string is None:
+            return []
+        else:
+            return json.loads(json_string)

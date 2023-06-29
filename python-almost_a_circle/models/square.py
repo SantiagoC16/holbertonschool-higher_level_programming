@@ -38,3 +38,13 @@ class Square(Rectangle):
                 self.x = args[2]
             if len(args) > 3:
                 self.y = args[3]
+        else:
+            for k, v in kwargs.items():
+                if k == "id":
+                    self.id = v
+                if k == "size":
+                    self.size = v
+                if k == "x":
+                    self.x = v
+                if k == "y":
+                    self.y = v

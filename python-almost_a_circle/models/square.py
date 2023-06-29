@@ -20,8 +20,8 @@ class Square(Rectangle):
     @property
     def size(self):
         return self.size
-    
+
     @size.setter
     def size(self, value):
-        
-
+        self.width = value
+        self.height = value

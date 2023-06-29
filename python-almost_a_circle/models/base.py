@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ more more more comment Base """
 import json
+import os
 
 
 class Base:
@@ -33,4 +34,9 @@ class Base:
         if list_objs is None:
             return []
         else:
-            return json.dump(list_objs, cls)
+            if cls.__name__ == "Rectangle":
+                with open("Rectangle.json", "w") as file:
+                    json.dump(list_objs, file)
+            else:
+                with open("Square.json", "w") as file:
+                    json.dump(list_objs, file)

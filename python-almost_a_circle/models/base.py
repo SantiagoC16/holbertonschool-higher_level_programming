@@ -38,5 +38,5 @@ class Base:
                 with open("Rectangle.json", "w") as file:
                     json.dump(list_objs, file)
             else:
-                with open("Square.json", "w") as file:
+                with open("Square.json", "r") as file:
                     json.dump(list_objs, file)

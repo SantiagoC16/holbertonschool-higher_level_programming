@@ -28,8 +28,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """saves a list of dictionaries to a jason file y lpm nacho por
-        dejar oculto los comentarios"""
+        """saves a list of dictionaries to a jason file"""
 
         if list_objs is None:
             return []
@@ -38,5 +37,5 @@ class Base:
                 with open("Rectangle.json", "w") as file:
                     json.dump(list_objs, file)
             else:
-                with open("Square.json", "r") as file:
+                with open("Square.json", "w") as file:
                     json.dump(list_objs, file)

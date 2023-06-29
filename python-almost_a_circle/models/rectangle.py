@@ -128,3 +128,12 @@ class Rectangle(Base):
                     self.__x = v
                 if k == "y":
                     self.__y = v
+
+    def to_dictionary(self):
+        """public method"""
+
+        dict = {"x": self.x,
+                "y": self.y,
+                "id": self.id,
+                "width": self.width,
+                "height": self.height}

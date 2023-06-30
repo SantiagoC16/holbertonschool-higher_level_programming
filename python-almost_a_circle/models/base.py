@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ more more more comment Base """
 import json
+import os
 
 
 class Base:
@@ -52,7 +53,7 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        """class method jason"""
+        """class method"""
 
         if cls.__name__ == "Rectangle":
             tonto = cls(16, 16)
@@ -60,3 +61,18 @@ class Base:
             tonto = cls(16)
         tonto.update(**dictionary)
         return tonto
+
+    @classmethod
+    def load_from_file(cls):
+        """class method"""
+
+        file = cls.__name__ + ".json"
+        if os.path.exists(file):
+            with open(file, mode="r") as filee:
+                dict = cls.from_json_string(filee.read())
+                list = []
+                for x in dict:
+                    list.append(cls.create(**x))
+                return list
+        else:
+            return []

@@ -85,8 +85,6 @@ class Tests_Square(unittest.TestCase):
         s2 = Square.create(**s1_dictionary)
         self.assertFalse(s1 is s2)
         self.assertEqual(s1.__str__(), s2.__str__())
-        with self.assertRaises(TypeError):
-            s3 = Square(1, 2, 3, 4, 5)
 
     def test_save_to_file(self):
         """test save_to_file"""

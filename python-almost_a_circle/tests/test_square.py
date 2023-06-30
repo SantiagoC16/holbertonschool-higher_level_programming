@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 """unitest for square"""
 import unittest
-import io
 import os
-import sys
 from models.square import Square
 
 

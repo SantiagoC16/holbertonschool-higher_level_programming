@@ -55,8 +55,8 @@ class Base:
         """class method jason"""
 
         if cls.__name__ == "Rectangle":
-            tonto = cls("nacho", "quiero")
+            tonto = cls(16, 16)
         else:
-            tonto = cls("checker")
+            tonto = cls(16)
         tonto.update(**dictionary)
         return tonto
